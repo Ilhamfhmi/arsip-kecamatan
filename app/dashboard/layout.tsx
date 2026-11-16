@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import ChatBot from '@/components/ChatBot'
 
 const navItems = [
   {
@@ -166,6 +167,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           {children}
         </main>
       </div>
+
+      {/* Floating AI Chatbot Widget */}
+      <ChatBot />
     </div>
   )
 }
